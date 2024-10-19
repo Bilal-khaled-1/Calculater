@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Calculater</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <section id="Calculater">
+            <input id="display" readonly>
+            <label id="ans"></label>
+            <div class="num1" id="num1">
+                <button class="num" onclick="appendToDisplay('1')" id="one">1</button>
+                <button class="num" onclick="appendToDisplay('2')" id="two">2</button>
+                <button class="num" onclick="appendToDisplay('3')" id="three">3</button>
+                <button onclick="appendToDisplay('+')" class="unit" id="plus">+</button>
+                <button class="num" onclick="appendToDisplay('4')" id="four">4</button>
+                <button class="num" onclick="appendToDisplay('5')" id="five">5</button>
+                <button class="num" onclick="appendToDisplay('6')" id="six">6</button>
+                <button onclick="appendToDisplay('-')" class="unit" id="mine">-</button>
+                <button class="num" onclick="appendToDisplay('7')" id="seven">7</button>
+                <button class="num" onclick="appendToDisplay('8')" id="eight">8</button>
+                <button class="num" onclick="appendToDisplay('9')" id="nine">9</button>
+                <button onclick="appendToDisplay('*')" class="unit" id="multi">x</button>
+                <button class="num" onclick="appendToDisplay('.')" id="dot">.</button>
+                <button class="num" onclick="appendToDisplay('0')" id="zero">0</button>
+                <button class="num" onclick="equal()" id="equ">=</button>
+                <button onclick="appendToDisplay('/')" class="unit" id="div">/</button> 
+                <button class="num" onclick='appendToDisplay("(")' id="left">(</button>
+                <button class="num" onclick='appendToDisplay(")")' id="right">)</button>
+                <button class="unit" onclick='appendToDisplay("**")' id="power">P</button>
+                <button class="unit" id="C">C</button>
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
